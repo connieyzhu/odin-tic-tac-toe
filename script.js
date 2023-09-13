@@ -24,6 +24,9 @@ const displayController = (() => {
 })();
 
 const gameController = (() => {
+    const playerX = Player('X');
+    const playerY = Player('Y');
+
     const restartBtn = document.querySelector('.restart');
     restartBtn.addEventListener('click', (e) => {
         //clear board, in displayController
