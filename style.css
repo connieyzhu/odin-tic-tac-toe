@@ -44,6 +44,8 @@ h2.gameStatus{
     border: 2px solid var(--violet);
     background-color: white;
     color: var(--violet);
+    font-size: 100px;
+    text-align: center;
 }
 
 button.restart{
