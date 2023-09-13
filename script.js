@@ -1,5 +1,9 @@
 const Player = (sign) => {
-    return {sign};
+    this.sign = sign;
+    const getSign = (sign) => {
+        return sign;
+    }
+    return {getSign};
 };
 
 const gameBoard = (() => {
