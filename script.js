@@ -12,14 +12,11 @@ const displayController = (() => {
     const message = () => console.log('testDisplay');
 
     const grid = document.querySelector('.grid');
-    grid.addEventListener('mouseover', () => {
-        const hoverList = document.querySelectorAll(":hover");
-        const hoverSquare = hoverList.item(hoverList.length-1);
-        hoverSquare.style.backgroundColor = '#E3D7FF';
+    grid.addEventListener('mouseover', (e) => {
+        e.target.style.backgroundColor = '#E3D7FF';
     });
 
     grid.addEventListener('mouseout', (e) => {
-    
         e.target.style.backgroundColor = 'white';
     });
 
