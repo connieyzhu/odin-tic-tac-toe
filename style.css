@@ -7,25 +7,50 @@
     --nyanza: #E1F4CB;
 }
 
+body{
+    background-color: var(--nyanza);
+    font-family: 'Lilita One';
+}
+
 .header{
     background-color: var(--violet);
     color: var(--periwinkle);
     text-align: center;
     font-size: 30px;
-    font-family: 'Lilita One';
     padding: 20px;
 }
 
 .body{
-    background-color: var(--nyanza);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+h2.gameStatus{
+    font-size: 30px;
+    color: var(--violet);
 }
 
 .grid{
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    border: 2px solid var(--violet);
 }
 
 .square{
     border: 2px solid var(--violet);
+    background-color: white;
+    color: var(--violet);
+}
+
+button.restart{
+    font-family: "Lilita One";
+    font-size: 24px;
+    padding: 10px 30px;
+    border-radius: 8px;
+    background-color: var(--periwinkle);
+    color: var(--violet);
 }
