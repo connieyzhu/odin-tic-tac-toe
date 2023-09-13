@@ -9,7 +9,21 @@ const gameBoard = (() => {
 })();
 
 const displayController = (() => {
+    const message = () => console.log('testDisplay');
+
+    const grid = document.querySelector('.grid');
+    grid.addEventListener('mouseover', () => {
+        const hoverList = document.querySelectorAll(":hover");
+        const hoverSquare = hoverList.item(hoverList.length-1);
+        hoverSquare.style.backgroundColor = '#E3D7FF';
+    });
+
+    grid.addEventListener('mouseout', (e) => {
     
+        e.target.style.backgroundColor = 'white';
+    });
+
+    return message;
 })();
 
 const gameController = (() => {
@@ -21,4 +35,5 @@ const gameController = (() => {
 
 })();
 
+displayController();
 gameBoard();
