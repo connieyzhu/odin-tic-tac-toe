@@ -13,6 +13,11 @@ const displayController = (() => {
 })();
 
 const gameController = (() => {
+    const restartBtn = document.querySelector('.restart');
+    restartBtn.addEventListener('click', (e) => {
+        //clear board, in displayController
+        //reset 1st player to x
+    });
 
 })();
 
